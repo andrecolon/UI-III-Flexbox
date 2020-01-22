@@ -72,8 +72,6 @@ h1, h2, h3, h4, h5 {
 }
 .container.servicesBG {
 /* background: url('../../design-files/services-desktop-design.png') center top no-repeat; */
-
-
 }
 
 nav {
@@ -87,7 +85,6 @@ nav {
 }
 nav a {
     margin: 28px;
-    margin-left: 28px;
     text-decoration: none;
 }
 nav a:first-child {
@@ -228,9 +225,66 @@ address span {
 @media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
  img {max-width: 100%;}
 }
+@media screen and (min-width: 320px) and (max-width: 800px) and (orientation:portrait){
+  html { background: red; }
+	container, section {
+		display: flex;
+		justify-content: space-around;
+		min-width: 480px;
+	}
+	nav {
+    display: flex;
+    flex-direction: column;
+		padding:0px;
+		margin-top: 50px;
+	}
+	nav a {
+    margin: 10px;
+    margin-left: 0px;
+    text-decoration: none;
+    text-align: center;
+}
+.logo {
+    position: relative;
+    left: 36%;
+    top: -258px;
+}
+section {
+	justify-content: center;
+}
+/* Index page --*/
+.slogan-txt, .get-started {
+	width:100%;
+	position: relative;
+	left:0;
+}
+.hero-image{
+display: none;
 
-@media all and (max-width: 699px) {
-  body {
-    bakground:red;
-  }
+}
+.sect2 {
+    border-bottom: 1px solid #999999;
+    margin-top: 33px;
+    height: auto;
+}
+address {
+	text-align: center;
+	width:auto;
+}
+/* Services page --*/
+.mission {
+    margin: 20px;
+    padding: 40px;
+}
+
+.facts {
+    margin: 40px 0 0 0;
+    padding: 40px;
+		flex-basis: auto;
+}
+.services-info-img {
+    flex-basis: -moz-available;
+    margin: 20px 0 0 0;
+}
+/* End Media queries */
 }
