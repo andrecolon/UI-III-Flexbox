@@ -132,6 +132,10 @@ button {
 button:hover {
 	background: green;
 }
+.get-started {
+    left: 140px;
+    position: absolute;
+}
 .middle-img {
 	padding: 0;
 }
@@ -221,8 +225,12 @@ address span {
 	padding: 20px;
 	font-size: 0.9em;
 }
-@media screen and (max-width: 700px) {
-  .row, .navbar {
-    flex-direction: column;
+@media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+ img {max-width: 100%;}
+}
+
+@media all and (max-width: 699px) {
+  body {
+    bakground:red;
   }
 }
